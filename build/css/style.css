@@ -62,14 +62,33 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 62px;
   line-height: 1.4;
 }
 
-.out {
-  background-color: #444;
+.l-left {
+  float: left;
+  width: 40%;
+  background: #001122;
+}
+@media only screen and (max-width: 600px) {
+  .l-left p {
+    font-size: 44px;
+    background-color: #ddd;
+    background-image: linear-gradient(#ddd, #000);
+  }
 }
 
-.test {
-  font-size: 35px;
+.l-right {
+  float: right;
+  width: 60%;
+  background: #112233;
+}
+
+.l-main {
+  *zoom: 1;
+}
+.l-main:after {
+  content: " ";
+  display: table;
+  clear: both;
 }
